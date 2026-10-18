@@ -6,16 +6,16 @@ const TeamSection = () => {
     {
       num: '01',
       prefix: '01 —',
-      name: 'MAYURI S V',
-      role: 'Team Lead | Research, Validation & Project Integration',
-      image: '/images/team/mayuri.jpg'
+      name: 'BOOMESH R',
+      role: 'Team Lead | System Architecture & Integration',
+      image: '/images/team/boomesh.jpg'
     },
     {
       num: '02',
       prefix: '02 —',
-      name: 'BOOMESH R',
-      role: 'Technical Lead | System Architecture & Integration',
-      image: '/images/team/boomesh.jpg'
+      name: 'MAYURI S V',
+      role: 'Research, Validation & Project Integration',
+      image: '/images/team/mayuri.jpg'
     },
     {
       num: '03',

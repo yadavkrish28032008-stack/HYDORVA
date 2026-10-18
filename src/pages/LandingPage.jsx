@@ -40,17 +40,17 @@ const LandingPage = ({ onOpenDashboard }) => {
   const teamMembers = [
     {
       num: 'TEAM MEMBER 01',
-      name: 'MAYURI S V',
-      role: 'Team Lead | Research, Validation & Project Integration',
-      image: '/images/team/mayuri.jpg',
-      initials: 'MSV'
+      name: 'BOOMESH R',
+      role: 'Team Lead | System Architecture & Integration',
+      image: '/images/team/boomesh.jpg',
+      initials: 'BR'
     },
     {
       num: 'TEAM MEMBER 02',
-      name: 'BOOMESH R',
-      role: 'Technical Lead | System Architecture & Integration',
-      image: '/images/team/boomesh.jpg',
-      initials: 'BR'
+      name: 'MAYURI S V',
+      role: 'Research, Validation & Project Integration',
+      image: '/images/team/mayuri.jpg',
+      initials: 'MSV'
     },
     {
       num: 'TEAM MEMBER 03',
