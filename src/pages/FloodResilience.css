@@ -1,0 +1,369 @@
+.flood-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Alert Cards */
+.flood-alert-card {
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  animation: slideDown 0.3s ease;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-card);
+  background-color: #ffffff;
+}
+
+.flood-alert-card.active {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.flood-alert-card.overflow {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+.alert-badge-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+}
+
+.alert-content-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.alert-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.alert-content-box h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.flood-alert-card.active h3 {
+  color: #dc2626;
+}
+
+.flood-alert-card.overflow h3 {
+  color: #d97706;
+}
+
+.mode-pill {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.mode-pill.critical {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.mode-pill.warning {
+  background-color: #fef3c7;
+  color: #d97706;
+  border: 1px solid #fde68a;
+}
+
+.alert-content-box p {
+  margin: 0;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Flow Routes Section */
+.flow-routes-section {
+  width: 100%;
+}
+
+.routes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 14px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.routes-subtitle {
+  font-size: 12px;
+  color: #64748b;
+  margin: 4px 0 0 0;
+}
+
+.route-mode-pills {
+  display: flex;
+  gap: 6px;
+  background-color: #ffffff;
+  padding: 4px;
+  border-radius: 9999px;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-sm);
+}
+
+.route-pill {
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  background: transparent;
+  color: #64748b;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.route-pill:hover {
+  color: #0f172a;
+}
+
+.route-pill.active {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  border-color: #bae6fd;
+}
+
+.flow-routes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.route-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-card);
+}
+
+.route-card.route-active-teal {
+  border-left: 4px solid #0284c7;
+  border-color: #bae6fd;
+  background-color: #f0f9ff;
+}
+
+.route-card.route-active-amber {
+  border-left: 4px solid #d97706;
+  border-color: #fde68a;
+  background-color: #fffbeb;
+}
+
+.route-card.route-active-red {
+  border-left: 4px solid #dc2626;
+  border-color: #fecaca;
+  background-color: #fef2f2;
+}
+
+.route-card.route-inactive {
+  opacity: 0.65;
+}
+
+.route-card.route-inactive:hover {
+  opacity: 0.9;
+}
+
+.route-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.route-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.active-pill {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  padding: 3px 8px;
+  border-radius: 9999px;
+}
+
+.active-pill.teal {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+}
+
+.active-pill.amber {
+  background-color: #fef3c7;
+  color: #d97706;
+  border: 1px solid #fde68a;
+}
+
+.active-pill.red {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.nodes-chain {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0;
+}
+
+.flow-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.route-active-teal .flow-node {
+  border-color: #bae6fd;
+}
+
+.route-active-amber .flow-node {
+  border-color: #fde68a;
+}
+
+.route-active-red .flow-node {
+  border-color: #fecaca;
+}
+
+.node-icon {
+  display: flex;
+  align-items: center;
+  color: #0284c7;
+}
+
+.node-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.node-arrow {
+  display: flex;
+  align-items: center;
+  color: #0284c7;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.route-desc {
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Metrics Grid */
+.flood-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.flood-column {
+  width: 100%;
+}
+
+.capacity-section {
+  width: 100%;
+}
+
+.section-header {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.2px;
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.info-section {
+  width: 100%;
+}
+
+.info-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  border-left: 4px solid #0284c7;
+  box-shadow: var(--shadow-card);
+}
+
+.info-card:hover {
+  border-color: #cbd5e1;
+  border-left-color: #0284c7;
+}
+
+.info-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.2px;
+}
+
+.info-text {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-text strong {
+  color: #0284c7;
+}
+
+@media (max-width: 1200px) {
+  .flood-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

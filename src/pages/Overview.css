@@ -1,0 +1,392 @@
+.overview-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* KPI Top Row: 6 Cards */
+.kpi-section {
+  width: 100%;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+
+/* Middle Section: Timeline (Left) + Pipeline (Right) */
+.middle-section {
+  width: 100%;
+}
+
+.middle-grid {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.middle-col {
+  height: 100%;
+}
+
+/* Treatment Pipeline Card matching reference screenshot */
+.treatment-pipeline-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pipeline-header {
+  margin-bottom: 12px;
+}
+
+.pipeline-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+
+.pipeline-chain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  width: 100%;
+  flex: 1;
+  overflow-x: auto;
+}
+
+.pipeline-stage-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 86px;
+  padding: 6px 4px;
+  transition: transform 0.15s ease;
+}
+
+.stage-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: #f0f9ff;
+  border: 1.5px solid #bae6fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0284c7;
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.pipeline-stage-item.stage-elevated .stage-icon-box {
+  background-color: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+.stage-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 3px 0;
+  line-height: 1.25;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage-desc {
+  font-size: 10px;
+  color: #64748b;
+  margin: 0 0 8px 0;
+  line-height: 1.25;
+  height: 24px;
+}
+
+.stage-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 10.5px;
+  font-weight: 700;
+}
+
+.stage-status-pill.pill-ok {
+  background-color: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.stage-status-pill.pill-active {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.stage-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.stage-connector-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0284c7;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+/* ===================================================
+   BOTTOM SECTION: 4 EQUAL BALANCED DASHBOARD CARDS
+=================================================== */
+.bottom-section {
+  width: 100%;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.bottom-card-wrap {
+  height: 100%;
+  display: flex;
+  min-width: 0;
+}
+
+.bottom-card-wrap > * {
+  width: 100%;
+  height: 100%;
+}
+
+/* 3R Impact Donut Card */
+.three-r-donut-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px 14px 18px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 350px;
+  box-sizing: border-box;
+}
+
+.three-r-donut-header {
+  height: 36px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.three-r-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.three-r-icon.blue-icon {
+  color: #0284c7;
+  flex-shrink: 0;
+}
+
+.three-r-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.2px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.three-r-donut-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1;
+  padding: 4px 0;
+}
+
+.donut-circle-wrap {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.donut-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.donut-center-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.donut-percent {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.donut-sublabel {
+  font-size: 9px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.donut-legend-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.legend-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-reduce {
+  background-color: #0369a1;
+}
+
+.dot-reuse {
+  background-color: #0284c7;
+}
+
+.dot-recharge {
+  background-color: #38bdf8;
+}
+
+.legend-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.legend-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.legend-val {
+  font-size: 10.5px;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.legend-pct {
+  color: #94a3b8;
+}
+
+.three-r-footer {
+  height: 36px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #f8fafc;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.three-r-footnote {
+  font-size: 10.5px;
+  color: #94a3b8;
+  font-style: italic;
+  display: block;
+  white-space: nowrap;
+}
+
+/* Team and Mentors Section */
+.overview-team-section {
+  width: 100%;
+  padding-top: 16px;
+}
+
+/* ===================================================
+   RESPONSIVE LAYOUT
+=================================================== */
+@media (max-width: 1380px) {
+  .kpi-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1100px) {
+  .middle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}

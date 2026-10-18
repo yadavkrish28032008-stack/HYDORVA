@@ -1,0 +1,251 @@
+.header {
+  height: 68px;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-card);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  z-index: 90;
+  flex-shrink: 0;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.menu-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  transition: all 0.15s ease;
+}
+
+.menu-btn:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.header-title-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 11.5px;
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mode-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mode-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  border-radius: 9999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.mode-btn .mode-icon {
+  flex-shrink: 0;
+}
+
+/* Normal Mode Pill */
+.mode-btn.mode-normal {
+  background-color: #e0f2fe;
+  border: 1px solid #bae6fd;
+  color: #0284c7;
+}
+
+.mode-btn.mode-normal:hover {
+  background-color: #bae6fd;
+}
+
+.mode-btn.mode-normal.active {
+  background-color: #0284c7;
+  border-color: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.35);
+}
+
+/* Overflow Mode Pill */
+.mode-btn.mode-overflow {
+  background-color: #fef3c7;
+  border: 1px solid #fde68a;
+  color: #d97706;
+}
+
+.mode-btn.mode-overflow:hover {
+  background-color: #fde68a;
+}
+
+.mode-btn.mode-overflow.active {
+  background-color: #d97706;
+  border-color: #d97706;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.35);
+}
+
+/* Flood Mode Pill */
+.mode-btn.mode-flood {
+  background-color: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+
+.mode-btn.mode-flood:hover {
+  background-color: #fecaca;
+}
+
+.mode-btn.mode-flood.active {
+  background-color: #dc2626;
+  border-color: #dc2626;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.35);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.landing-nav-shortcut-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 9999px;
+  color: #0284c7;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.landing-nav-shortcut-btn:hover {
+  background-color: #e0f2fe;
+  border-color: #bae6fd;
+}
+
+.datetime-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 9999px;
+  color: #0284c7;
+  font-size: 12.5px;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.datetime-icon {
+  color: #0284c7;
+  flex-shrink: 0;
+}
+
+.bell-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0284c7;
+  position: relative;
+  transition: all 0.15s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.bell-btn:hover {
+  background-color: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+.bell-badge {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 6px;
+  height: 6px;
+  background-color: #0ea5e9;
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 0 16px;
+  }
+
+  .mode-btn {
+    padding: 6px 12px;
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    height: auto;
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header-center {
+    order: 3;
+    width: 100%;
+  }
+
+  .mode-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mode-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
+

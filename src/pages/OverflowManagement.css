@@ -1,0 +1,327 @@
+.overflow-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Status Header Card */
+.overflow-status-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.overflow-status-card.normal {
+  border-left: 4px solid var(--accent-blue);
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.04), #ffffff);
+}
+
+.overflow-status-card.overflow {
+  border-left: 4px solid var(--status-warning);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.06), #ffffff);
+  border-color: #fde68a;
+}
+
+.overflow-status-card.critical {
+  border-left: 4px solid var(--status-critical);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.06), #ffffff);
+  border-color: #fecaca;
+}
+
+.status-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.status-label-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.system-condition-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.current-status-display {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.overflow-status-card.normal .current-status-display {
+  color: var(--status-safe);
+}
+
+.overflow-status-card.overflow .current-status-display {
+  color: var(--status-warning);
+}
+
+.overflow-status-card.critical .current-status-display {
+  color: var(--status-critical);
+}
+
+.demo-data-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-light);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+.status-explanation {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Indicators Grid */
+.overflow-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.overflow-column {
+  width: 100%;
+}
+
+.capacity-section {
+  width: 100%;
+}
+
+.section-header {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 14px;
+}
+
+/* Flow Visualization */
+.flow-visualization {
+  width: 100%;
+}
+
+.flow-vis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.vis-subtext {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.flow-paths {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 24px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.path {
+  flex: 1;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 18px 16px;
+  border-radius: 12px;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-card);
+  transition: all 0.2s ease;
+}
+
+.path-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-sm);
+}
+
+.path-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.path-label {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.path-status-pill {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.path-status-pill.active {
+  background-color: var(--accent-blue-light);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+}
+
+.path-status-pill.active-warning {
+  background-color: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.path-status-pill.active-critical {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.path-status-pill.standby {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+  border: 1px solid #e2e8f0;
+}
+
+.path.normal.active {
+  border-color: #bae6fd;
+  background-color: #f0f9ff;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.12);
+}
+
+.path.normal.inactive {
+  opacity: 0.6;
+}
+
+.path.secondary.active {
+  border-color: #fde68a;
+  background-color: #fffbeb;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+}
+
+.path.secondary.standby {
+  opacity: 0.6;
+}
+
+.path.bypass.active {
+  border-color: #fecaca;
+  background-color: #fef2f2;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.15);
+}
+
+.path.bypass.standby {
+  opacity: 0.6;
+}
+
+.path-divider {
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Info Section */
+.info-section {
+  width: 100%;
+}
+
+.info-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 14px;
+  padding: 20px 24px;
+  border-left: 4px solid var(--accent-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+.info-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.info-text {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-text strong {
+  color: var(--accent-blue);
+}
+
+@media (max-width: 1200px) {
+  .overflow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-paths {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .path-divider {
+    transform: rotate(90deg);
+  }
+
+  .path {
+    width: 100%;
+  }
+}

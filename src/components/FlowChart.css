@@ -1,0 +1,126 @@
+.flow-chart-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px 14px 20px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.flow-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.flow-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+
+.flow-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flow-unit-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.flow-unit-select:hover {
+  border-color: #cbd5e1;
+}
+
+.select-arrow {
+  color: #94a3b8;
+}
+
+.flow-more-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  border-radius: 6px;
+}
+
+.flow-more-btn:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.flow-chart-wrapper {
+  width: 100%;
+  margin: 4px 0;
+}
+
+.flow-card-footer {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #f8fafc;
+}
+
+.flow-disclaimer-text {
+  font-size: 11px;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+/* Tooltip */
+.flow-tooltip {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.flow-tooltip-time {
+  font-size: 11px;
+  color: #64748b;
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+
+.flow-tooltip-val {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.flow-tooltip-unit {
+  font-size: 11px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.flow-tooltip-note {
+  font-size: 9.5px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
