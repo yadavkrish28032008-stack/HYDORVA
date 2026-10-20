@@ -1,5 +1,5 @@
 /* ===================================================
-   HYDROVA LANDING PAGE STYLING
+   JalRakshak LANDING PAGE STYLING
    Theme: Light Blue & White Professional System
 =================================================== */
 
@@ -1517,6 +1517,11 @@
 }
 
 @media (max-width: 860px) {
+  .landing-nav-container {
+    padding: 10px 18px;
+    gap: 12px;
+  }
+
   .landing-nav-links {
     display: none;
   }
@@ -1557,73 +1562,595 @@
 }
 
 @media (max-width: 640px) {
-  .section-wrapper {
-    padding: 60px 18px;
+  /* Navigation Bar Mobile Layout */
+  .landing-nav-container {
+    padding: 10px 14px;
+    gap: 8px;
+    white-space: normal;
   }
 
+  .landing-nav-left {
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .landing-brand {
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .landing-logo-badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  .landing-brand-text {
+    min-width: 0;
+  }
+
+  .landing-brand-title {
+    font-size: 18px;
+    letter-spacing: -0.3px;
+  }
+
+  .landing-brand-sub {
+    font-size: 10px;
+    letter-spacing: 0.1px;
+  }
+
+  .landing-nav-actions {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .open-dashboard-btn {
+    padding: 7px 11px;
+    font-size: 12px;
+    gap: 5px;
+    border-radius: 8px;
+  }
+
+  .mobile-menu-toggle {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-nav-dropdown {
+    padding: 12px 16px;
+  }
+
+  /* Section Containers */
+  .section-wrapper {
+    padding: 46px 16px;
+  }
+
+  .section-header-center {
+    margin: 0 auto 30px auto;
+  }
+
+  .section-sub-tag {
+    font-size: 10.5px;
+    padding: 3px 10px;
+    margin-bottom: 8px;
+  }
+
+  .section-main-heading {
+    font-size: 24px;
+    letter-spacing: -0.4px;
+    line-height: 1.22;
+    margin-bottom: 8px;
+    word-break: break-word;
+  }
+
+  .section-lead-text {
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+
+  /* Hero Section */
   .hero-section {
-    padding: 50px 18px 60px 18px;
+    padding: 42px 16px 48px 16px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .hero-badge {
+    font-size: 11px;
+    padding: 5px 12px;
+    line-height: 1.35;
+    white-space: normal;
+    text-align: center;
+    margin-bottom: 16px;
+    max-width: 100%;
   }
 
   .hero-title {
-    font-size: 28px;
+    font-size: 27px;
+    line-height: 1.22;
+    letter-spacing: -0.6px;
+    word-break: break-word;
+    margin-bottom: 14px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 22px;
   }
 
   .hero-actions {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
+    margin-bottom: 24px;
   }
 
-  .hero-primary-btn, .hero-secondary-btn {
+  .hero-primary-btn, 
+  .hero-secondary-btn {
     width: 100%;
     justify-content: center;
+    padding: 12px 18px;
+    font-size: 14px;
   }
 
   .hero-meta-strip {
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
+    padding-top: 16px;
+    width: 100%;
   }
 
   .meta-divider {
     display: none;
   }
 
+  .hero-visual-card {
+    padding: 18px 14px;
+    border-radius: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pipeline-step {
+    padding: 8px 10px;
+    gap: 10px;
+  }
+
+  .pipeline-icon-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .pipeline-dual-outcomes {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  /* Content Cards */
   .problem-cards-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .problem-card {
+    padding: 20px 16px;
+    border-radius: 14px;
   }
 
   .solution-components-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 20px;
   }
 
+  .solution-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .solution-notice-banner {
+    padding: 12px 14px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  /* Process Flow */
+  .process-flow-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 14px;
+  }
+
+  .process-step-node {
+    width: 100%;
+    min-width: unset;
+    padding: 12px 10px;
+  }
+
+  .dual-pathways-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .pathway-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .pathway-flow-pill {
+    padding: 8px 10px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  /* Features Grid */
   .features-cards-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
+  .feature-card {
+    padding: 22px 18px;
+    border-radius: 14px;
+  }
+
+  /* Operating Modes Tabs */
+  .modes-tab-controls {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .mode-tab-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .mode-display-card {
+    padding: 18px 14px;
+    border-radius: 14px;
+  }
+
+  .mode-pane {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mode-pane-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .mode-pane-desc {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .mode-stat-box {
+    padding: 12px 14px;
+  }
+
+  /* Impact Section */
   .impact-areas-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 20px;
   }
 
+  .impact-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .impact-validation-note {
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+
+  /* ===================================================
+     TEAM SECTION MOBILE OPTIMIZATIONS
+     =================================================== */
   .team-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
   }
 
+  .team-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 24px 18px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team-portrait-wrapper {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto 14px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e0f2fe;
+    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .team-portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    border-radius: 50%;
+  }
+
+  .team-portrait-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .placeholder-initials {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  .team-member-number {
+    font-size: 11px;
+    font-weight: 800;
+    color: #0284c7;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .team-member-name {
+    font-size: 16.5px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.2px;
+    margin: 0 0 6px 0;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  .team-member-role {
+    font-size: 12.5px;
+    color: #64748b;
+    line-height: 1.45;
+    margin: 0;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  /* ===================================================
+     MENTOR SECTION MOBILE OPTIMIZATIONS
+     =================================================== */
   .mentors-grid {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    gap: 16px;
   }
 
   .mentor-card {
     width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    padding: 24px 18px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mentor-portrait-wrapper {
+    position: relative;
+    width: 105px;
+    height: 105px;
+    margin: 0 auto 16px auto;
+    border-radius: 50%;
+    border: 3px solid #bae6fd;
+    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .mentor-portrait-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .mentor-badge-pill {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9.5px;
+    padding: 2px 9px;
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+
+  .mentor-number {
+    font-size: 11px;
+    font-weight: 800;
+    color: #0284c7;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .mentor-name {
+    font-size: 16.5px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.2px;
+    margin: 0 0 6px 0;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  .mentor-role {
+    font-size: 12.5px;
+    color: #64748b;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.45;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .landing-footer {
+    padding: 44px 16px 24px 16px;
   }
 
   .footer-top-row {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .footer-bottom-bar {
     flex-direction: column;
+    gap: 12px;
     text-align: center;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .landing-brand-sub {
+    display: none;
+  }
+
+  .landing-nav-container {
+    padding: 9px 12px;
+  }
+
+  .hero-meta-strip {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .landing-nav-container {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .landing-logo-badge {
+    width: 32px;
+    height: 32px;
+  }
+
+  .landing-brand-title {
+    font-size: 16px;
+  }
+
+  .open-dashboard-btn {
+    padding: 6px 8px;
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  .section-wrapper {
+    padding: 38px 12px;
+  }
+
+  .hero-section {
+    padding: 34px 12px 40px 12px;
+  }
+
+  .hero-title {
+    font-size: 23px;
+  }
+
+  .section-main-heading {
+    font-size: 21px;
+  }
+
+  .pipeline-dual-outcomes {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-meta-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card,
+  .mentor-card {
+    padding: 20px 12px;
+    border-radius: 14px;
+  }
+
+  .team-portrait-wrapper,
+  .mentor-portrait-wrapper {
+    width: 95px;
+    height: 95px;
+    margin-bottom: 12px;
+  }
+
+  .team-member-name,
+  .mentor-name {
+    font-size: 15.5px;
+  }
+
+  .team-member-role,
+  .mentor-role {
+    font-size: 12px;
+  }
+
+  .problem-card,
+  .solution-card,
+  .feature-card,
+  .impact-card,
+  .pathway-card,
+  .mode-display-card {
+    padding: 16px 12px;
+    border-radius: 12px;
   }
 }

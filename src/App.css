@@ -83,14 +83,30 @@
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .app-body {
     margin-left: 0;
+    height: auto;
+    min-height: calc(100vh - 60px);
+    overflow: visible;
   }
 
   .main-content {
     padding: 12px;
+    height: auto;
+    overflow: visible;
+  }
+
+  .global-footer-bar {
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 11px;
+    word-break: break-word;
   }
 }
 

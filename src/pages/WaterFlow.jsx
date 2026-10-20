@@ -94,7 +94,7 @@ const WaterFlow = ({ isFloodMode, currentMode = 'normal' }) => {
             <h3 className="info-title">Water Flow Monitoring System</h3>
           </div>
           <p className="info-text">
-            The HYDROVA water flow subsystem tracks incoming domestic greywater from household drains. Under normal conditions, water passes sequentially through the coarse screen and biofilter. During hydraulic surges or flood events, flow diversion ensures primary treatment stages are protected from structural clogging or media washout.
+            The JalRakshak water flow subsystem tracks incoming domestic greywater from household drains. Under normal conditions, water passes sequentially through the coarse screen and biofilter. During hydraulic surges or flood events, flow diversion ensures primary treatment stages are protected from structural clogging or media washout.
           </p>
         </div>
       </section>

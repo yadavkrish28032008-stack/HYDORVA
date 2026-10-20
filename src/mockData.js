@@ -1,4 +1,4 @@
-// Mock data for the HYDROVA dashboard prototype
+// Mock data for the JalRakshak dashboard prototype
 // NOTE: All metrics are illustrative sample values for Hackathon Demonstration only.
 
 export const generateFlowChartData = (mode = 'normal') => {
@@ -26,7 +26,7 @@ export const generateFlowChartData = (mode = 'normal') => {
   return data;
 };
 
-// 6 Core Treatment Modules aligned with HYDROVA project concept
+// 6 Core Treatment Modules aligned with JalRakshak project concept
 export const treatmentModules = [
   {
     id: 1,

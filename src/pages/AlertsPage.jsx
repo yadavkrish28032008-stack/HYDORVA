@@ -111,7 +111,7 @@ const AlertsPage = ({ isFloodMode, currentMode = 'normal' }) => {
             <h3 className="info-title">Alert & Dispatch Subsystem Architecture</h3>
           </div>
           <p className="info-text">
-            HYDROVA continuously monitors virtual diagnostic thresholds across all 6 core modules. Alerts are stratified into three priority tiers: <strong>Critical</strong> (initiates simulated diversion and NRV closure), <strong>Warning</strong> (indicates hydraulic surge or primary capacity saturation), and <strong>Info</strong> (confirms routine biofilter percolation and nominal self-cleaning).
+            JalRakshak continuously monitors virtual diagnostic thresholds across all 6 core modules. Alerts are stratified into three priority tiers: <strong>Critical</strong> (initiates simulated diversion and NRV closure), <strong>Warning</strong> (indicates hydraulic surge or primary capacity saturation), and <strong>Info</strong> (confirms routine biofilter percolation and nominal self-cleaning).
           </p>
         </div>
       </section>

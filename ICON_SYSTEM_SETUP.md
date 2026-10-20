@@ -1,7 +1,7 @@
 # Icon System Setup - Task 1 Complete
 
 ## Task Summary
-Successfully installed Lucide Icons and created a centralized icon system for the HYDROVA Dashboard.
+Successfully installed Lucide Icons and created a centralized icon system for the JalRakshak Dashboard.
 
 ## Completed Subtasks
 

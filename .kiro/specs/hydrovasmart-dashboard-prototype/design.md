@@ -2,7 +2,7 @@
 
 ## Overview
 
-This design upgrades the HYDROVA dashboard from an emoji-based prototype to a professional Smart India Hackathon-ready technology product. The upgrade focuses on visual professionalism while preserving all existing functionality, structure, layout, navigation, data, charts, pages, and demo functionality.
+This design upgrades the JalRakshak dashboard from an emoji-based prototype to a professional Smart India Hackathon-ready technology product. The upgrade focuses on visual professionalism while preserving all existing functionality, structure, layout, navigation, data, charts, pages, and demo functionality.
 
 ## Design Principles
 
@@ -60,7 +60,7 @@ This design upgrades the HYDROVA dashboard from an emoji-based prototype to a pr
 
 ### Header/Logo
 - **Current**: "HYDROVASmart" with 💧 icon
-- **Updated**: "HYDROVA" with Droplet icon
+- **Updated**: "JalRakshak" with Droplet icon
 - **Subtitle**: "Smart Greywater Management"
 - **Style**: Professional, clean typography
 
@@ -166,7 +166,7 @@ This design upgrades the HYDROVA dashboard from an emoji-based prototype to a pr
 - ✗ Theme: Charcoal/dark → Light blue
 - ✗ Typography improvements
 - ✗ Visual polish (colors, spacing, borders)
-- ✗ Branding text "HYDROVASmart" → "HYDROVA"
+- ✗ Branding text "HYDROVASmart" → "JalRakshak"
 - ✗ No layout changes
 
 ## Success Criteria
@@ -174,7 +174,7 @@ This design upgrades the HYDROVA dashboard from an emoji-based prototype to a pr
 1. ✓ All emojis removed and replaced with Lucide icons
 2. ✓ No emoji characters remain in codebase
 3. ✓ Icons are professional and consistent
-4. ✓ Branding updated to "HYDROVA" with subtitle
+4. ✓ Branding updated to "JalRakshak" with subtitle
 5. ✓ Typography hierarchy improved
 6. ✓ Light blue theme applied throughout
 7. ✓ Card backgrounds light/white on light blue

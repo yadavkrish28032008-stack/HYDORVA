@@ -4,7 +4,7 @@ A professional, interactive dashboard prototype for the **HYDROVASmart Greywater
 
 ## 🎯 Project Overview
 
-The HYDROVA dashboard provides a comprehensive interface for monitoring:
+The JalRakshak dashboard provides a comprehensive interface for monitoring:
 
 - **Greywater Collection & Treatment** - Track water flowing through the system
 - **Water Reuse & Recharge** - Monitor treated water going back to use or groundwater
@@ -287,7 +287,7 @@ Edit `src/mockData.js` to change values, thresholds, or add new data sources.
 
 ## 📄 License
 
-This is a prototype demonstration project created for the HYDROVA system.
+This is a prototype demonstration project created for the JalRakshak system.
 
 ## 🤝 Future Enhancements
 

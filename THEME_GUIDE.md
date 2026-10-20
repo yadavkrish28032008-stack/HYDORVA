@@ -212,7 +212,7 @@ background-color: var(--bg-primary);  /* Light blue */
 - Icon: Droplet (Lucide)
 - Icon Size: 24px
 - Icon Color: Inherit from text color
-- Text: "HYDROVA"
+- Text: "JalRakshak"
 - Font: Same as body, bold
 - Subtitle: "Smart Greywater Management"
 - Subtitle Font: 11px, medium weight, gray

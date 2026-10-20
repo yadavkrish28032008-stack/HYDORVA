@@ -249,3 +249,43 @@
   }
 }
 
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .section-subtitle {
+    font-size: 10.5px;
+  }
+
+  .mode-controls {
+    gap: 6px;
+  }
+
+  .mode-btn {
+    padding: 6px 8px;
+    font-size: 11px;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .section-title {
+    font-size: 15px;
+  }
+
+  .bell-btn {
+    width: 32px;
+    height: 32px;
+  }
+}

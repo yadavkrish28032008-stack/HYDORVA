@@ -231,7 +231,7 @@ const Treatment = ({ currentMode = 'normal', isFloodMode, isOverflowMode }) => {
       <div className="treatment-disclaimer">
         <Icon name="info" size={16} color="var(--accent-blue)" />
         <p>
-          <strong>SAFETY &amp; VERIFICATION NOTICE:</strong> The HYDROVA treatment architecture is intended strictly for 
+          <strong>SAFETY &amp; VERIFICATION NOTICE:</strong> The JalRakshak treatment architecture is intended strictly for 
           domestic greywater recycling for non-potable uses (irrigation, toilet flushing) and controlled sub-surface recharge. 
           It does not make water potable or remove hazardous chemical pollutants. Displayed efficiency rates are design estimates 
           for prototype demonstration.

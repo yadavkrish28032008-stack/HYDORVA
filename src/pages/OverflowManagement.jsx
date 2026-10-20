@@ -172,7 +172,7 @@ const OverflowManagement = ({ currentMode = 'normal', isFloodMode, isOverflowMod
         <div className="info-card">
           <h3 className="info-title">Overflow Protection Architecture</h3>
           <p className="info-text">
-            HYDROVA is engineered with a layered hydraulic overflow protection system. 
+            JalRakshak is engineered with a layered hydraulic overflow protection system. 
             Under normal flow conditions, greywater is processed in the vertical biofilter and absorbed in the primary soak pit. 
             When heavy domestic discharge causes inflow to exceed primary capacity, the 
             <strong> Flow-Control Diversion Chamber</strong> directs surplus volume to the 

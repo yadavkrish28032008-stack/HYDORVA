@@ -32,7 +32,7 @@ const Sidebar = ({ activeSection, onSectionChange, onBackToLanding }) => {
             <Droplet size={22} className="brand-droplet-icon" />
           </div>
           <div className="brand-text-col">
-            <h1 className="brand-title">HYDROVA</h1>
+            <h1 className="brand-title">JalRakshak</h1>
             <p className="brand-subtitle">Smart Greywater Management<br />&amp; Flood Resilience System</p>
           </div>
         </div>

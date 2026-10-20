@@ -1,5 +1,5 @@
 /**
- * Icon System for HYDROVA Dashboard
+ * Icon System for JalRakshak Dashboard
  * Maps semantic icon names to Lucide React icons
  * Provides centralized icon management for consistent styling
  */

@@ -30,7 +30,7 @@ Replace emoji icons in sidebar with Lucide icons and update branding text.
 - [x] Replace 3R Impact ♻️ with Recycle
 - [x] Replace Alerts 🔔 with Bell
 - [x] Update logo: replace 💧 with Droplet icon
-- [~] Change branding text from "HYDROVASmart" to "HYDROVA"
+- [x] Change branding text from "HYDROVASmart" to "JalRakshak"
 - [~] Add subtitle "Smart Greywater Management"
 - [x] Verify all navigation items still work
 - [x] Verify sidebar styling unchanged
@@ -150,7 +150,7 @@ dependencies:: Task 2
 Update branding text and improve header styling.
 
 ## Subtasks
-- [~] Verify branding changed to "HYDROVA"
+- [~] Verify branding changed to "JalRakshak"
 - [~] Verify subtitle "Smart Greywater Management" displays
 - [~] Verify logo uses Droplet icon
 - [~] Improve header styling for professionalism

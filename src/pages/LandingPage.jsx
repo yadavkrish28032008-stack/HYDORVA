@@ -185,7 +185,7 @@ const LandingPage = ({ onOpenDashboard }) => {
       {/* 1. NAVIGATION BAR */}
       <header className="landing-nav-header">
         <div className="landing-nav-container">
-          {/* Left block: 1. SIH Government Logo FIRST, 2. HYDROVA Brand SECOND */}
+          {/* Left block: 1. SIH Government Logo FIRST, 2. JalRakshak Brand SECOND */}
           <div className="landing-nav-left">
             <div className="landing-nav-gov-banner">
               <img 
@@ -202,7 +202,7 @@ const LandingPage = ({ onOpenDashboard }) => {
                 <Droplet size={22} className="landing-logo-icon" />
               </div>
               <div className="landing-brand-text">
-                <span className="landing-brand-title">HYDROVA</span>
+                <span className="landing-brand-title">JalRakshak</span>
                 <span className="landing-brand-sub">Smart Greywater Management</span>
               </div>
             </div>
@@ -276,7 +276,7 @@ const LandingPage = ({ onOpenDashboard }) => {
             </h1>
 
             <p className="hero-description">
-              HYDROVA is a proposed low-cost, modular greywater management concept designed to address wastewater drainage challenges in villages affected by land scarcity, flooding, and soak pit overflow. The concept combines compact treatment, controlled flow, overflow management, and flood-resilient drainage.
+              JalRakshak is a proposed low-cost, modular greywater management concept designed to address wastewater drainage challenges in villages affected by land scarcity, flooding, and soak pit overflow. The concept combines compact treatment, controlled flow, overflow management, and flood-resilient drainage.
             </p>
 
             <div className="hero-actions">
@@ -451,8 +451,8 @@ const LandingPage = ({ onOpenDashboard }) => {
       <section className="section-wrapper" id="solution">
         <div className="section-container">
           <div className="section-header-center">
-            <span className="section-sub-tag">THE HYDROVA FRAMEWORK</span>
-            <h2 className="section-main-heading">Introducing HYDROVA</h2>
+            <span className="section-sub-tag">THE JalRakshak FRAMEWORK</span>
+            <h2 className="section-main-heading">Introducing JalRakshak</h2>
             <p className="section-lead-text">
               A proposed modular greywater management concept combining compact treatment, controlled flow, overflow management, and flood-resilient drainage.
             </p>
@@ -480,7 +480,7 @@ const LandingPage = ({ onOpenDashboard }) => {
           <div className="solution-notice-banner">
             <CheckCircle2 size={18} className="notice-icon" />
             <span>
-              <strong>Intended Use Notice:</strong> HYDROVA treats domestic greywater for dedicated non-potable reuse (landscape watering, toilet flushing) and sub-surface aquifer recharge. The treated effluent is not intended or safe for drinking.
+              <strong>Intended Use Notice:</strong> JalRakshak treats domestic greywater for dedicated non-potable reuse (landscape watering, toilet flushing) and sub-surface aquifer recharge. The treated effluent is not intended or safe for drinking.
             </span>
           </div>
         </div>
@@ -603,7 +603,7 @@ const LandingPage = ({ onOpenDashboard }) => {
             <span className="section-sub-tag">CORE ENGINEERING HIGHLIGHTS</span>
             <h2 className="section-main-heading">Designed for Rural Challenges</h2>
             <p className="section-lead-text">
-              Every mechanism in the HYDROVA architecture is optimized for minimal maintenance, passive hydraulic operation, and rural durability.
+              Every mechanism in the JalRakshak architecture is optimized for minimal maintenance, passive hydraulic operation, and rural durability.
             </p>
           </div>
 
@@ -770,7 +770,7 @@ const LandingPage = ({ onOpenDashboard }) => {
             <span className="section-sub-tag">PROJECTED VALUE FOR VILLAGES</span>
             <h2 className="section-main-heading">Building More Resilient Rural Water Management</h2>
             <p className="section-lead-text">
-              By coupling decentralized low-cost biofiltration with gravity-actuated flood protection, HYDROVA addresses critical pain points in rural environmental sanitation.
+              By coupling decentralized low-cost biofiltration with gravity-actuated flood protection, JalRakshak addresses critical pain points in rural environmental sanitation.
             </p>
           </div>
 
@@ -908,7 +908,7 @@ const LandingPage = ({ onOpenDashboard }) => {
                 <div className="footer-logo-badge">
                   <Droplet size={20} className="footer-logo-icon" />
                 </div>
-                <span className="footer-brand-title">HYDROVA</span>
+                <span className="footer-brand-title">JalRakshak</span>
               </div>
               <p className="footer-brand-subtitle">
                 Smart Greywater Management &amp; Flood Resilience System

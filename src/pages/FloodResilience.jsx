@@ -258,7 +258,7 @@ const FloodResilience = ({ currentMode = 'normal', isFloodMode, isOverflowMode, 
         <div className="info-card">
           <h3 className="info-title">Flood Resilience &amp; Anti-Backflow Engineering</h3>
           <p className="info-text">
-            The HYDROVA design integrates passive and automated flood-resilience mechanisms. 
+            The JalRakshak design integrates passive and automated flood-resilience mechanisms. 
             When simulated external water levels rise above the critical 4.0 meter threshold, 
             the system activates the flood bypass channel to protect sensitive vertical biofilter media from inundation. 
             Concurrently, the mechanical <strong>Non-Return Valve (NRV)</strong> closes under reverse hydraulic pressure, 

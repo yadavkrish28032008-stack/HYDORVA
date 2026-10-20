@@ -59,7 +59,7 @@ const ThreeRImpact = ({ isFloodMode, currentMode = 'normal' }) => {
           </div>
           <h3 className="header-title">3R Impact Analysis: Reduce • Reuse • Recharge</h3>
           <p className="header-subtitle">
-            HYDROVA combines source-level conservation, biological greywater treatment, and controlled sub-surface recharge to reduce municipal supply dependency and support aquifer replenishment.
+            JalRakshak combines source-level conservation, biological greywater treatment, and controlled sub-surface recharge to reduce municipal supply dependency and support aquifer replenishment.
           </p>
         </div>
       </section>
@@ -168,7 +168,7 @@ const ThreeRImpact = ({ isFloodMode, currentMode = 'normal' }) => {
 
       <section className="info-section">
         <div className="info-card">
-          <h3 className="info-title">Core Principles of the HYDROVA 3R Strategy</h3>
+          <h3 className="info-title">Core Principles of the JalRakshak 3R Strategy</h3>
           <div className="info-content">
             <div className="info-item">
               <div className="info-item-header">
